@@ -9,4 +9,10 @@ export interface IComment {
 	post: IPost
 }
 
+export interface ICommentInput extends Pick<IComment, 'id'> {
+	title: string
+	content?: string
+	user: IUser
+}
+
 export interface ICommentInput extends Pick<IComment, 'comment'> {}
