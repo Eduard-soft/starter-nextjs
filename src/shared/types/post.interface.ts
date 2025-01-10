@@ -10,6 +10,11 @@ export interface IPost {
 	comment: IComment[]
 }
 
-export interface IPostCreate extends Pick<IPost, 'title'> {}
+export interface IPostInput extends Pick<IPost, 'title'> {
+	title: string
+	content?: string
+	picture?: string[]
+	user: IUser
+}
 
 export interface IPostEdit extends Omit<IPost, 'id'> {}
