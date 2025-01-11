@@ -13,7 +13,7 @@ export const PUBLIC_URL = {
 }
 
 export const DASHBOARD_URL = {
-	root: (url = '') => `dashboard${url ? url : ''}`,
+	root: (url = '') => `/dashboard${url ? url : ''}`,
 
 	home: () => DASHBOARD_URL.root('/'),
 

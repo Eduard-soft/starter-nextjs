@@ -1,0 +1,46 @@
+.wrapper {
+	@apply min-h-screen grid grid-cols-1 lg:grid-cols-2;
+
+	> .left {
+		@apply h-full hidden lg:flex items-center justify-center;
+	}
+
+	> .right {
+		@apply h-full  bg-blue-600 flex flex-col items-center justify-center;
+
+		> .card {
+			
+			> .content {
+				@apply p-0 w-full;
+
+				> form {
+					@apply space-y-5;
+
+					button {
+						@apply w-full
+					}
+				}
+
+				> .social {
+					@apply space-y-3 w-full mt-5;
+
+					> batton {
+						@apply w-full;
+
+						> svg {
+							@apply size-5 mr-2
+						}
+					}
+				}
+			}
+
+			> .footer {
+				@apply p-0 mt-4 text-sm text-muted-foreground;
+
+				> button {
+					@apply ml-1 text-sky-600;
+				}
+			}
+		}
+	}
+}
